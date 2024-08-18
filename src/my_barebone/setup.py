@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'simple_talker = my_barebone.simple_talker:main'
+            'simple_talker = my_barebone.simple_talker:main',
+            'simple_listener = my_barebone.simple_listener:main'
         ],
     },
 )
