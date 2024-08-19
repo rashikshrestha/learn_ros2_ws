@@ -11,10 +11,10 @@ class TwoTalkOneListen(Node):
         #! Publisher 1
         self.my_publisher_1 = self.create_publisher(String, '/random_word_a', 10)
         self.my_timer_1 = self.create_timer(0.5, self.my_timer_callback_1)
-        self.my_timer_2 = self.create_timer(1, self.my_timer_callback_2)
         
         #! Publisher 2
         self.my_publisher_2 = self.create_publisher(String, '/random_word_b', 10)
+        self.my_timer_2 = self.create_timer(1, self.my_timer_callback_2)
         
         #! Subscriber
         self.my_subscriber = self.create_subscription(
