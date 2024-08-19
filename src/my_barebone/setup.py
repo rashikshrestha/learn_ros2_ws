@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             'simple_talker = my_barebone.simple_talker:main',
             'simple_listener = my_barebone.simple_listener:main',
-            'two_talk_one_listen = my_barebone.two_talk_one_listen:main'
+            'two_talk_one_listen = my_barebone.two_talk_one_listen:main',
+            'one_talk_two_listen = my_barebone.one_talk_two_listen:main'
         ],
     },
 )
